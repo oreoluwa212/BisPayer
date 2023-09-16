@@ -4,13 +4,17 @@
    border-radius: 10px;
    padding-right: 15px;
    display: flex;
-   position: sticky;
    margin-top: 30px;
 
    .nav-menu-bar {
       display: flex;
       gap: 170px;
       width: 100%;
+
+      @media (max-width: 1024px) {
+         gap: 10px;
+         flex-direction: column;
+      }
 
       a {
          text-decoration: none;

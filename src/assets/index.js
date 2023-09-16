@@ -16,6 +16,7 @@ import Person1 from './images/person1.png'
 import Person2 from './images/person2.png'
 import Person3 from './images/person3.png'
 import Person4 from './images/person4.png'
+import Customer from './images/Customer.png'
 
 
-export { Logo, Hero, grow, schedule, packages, box, statistics, calender, Frame1, Frame2, Frame3, Frame4, Frame5, Frame6, Person1, Person2, Person3, Person4 }
+export { Logo, Hero, grow, schedule, packages, box, statistics, calender, Frame1, Frame2, Frame3, Frame4, Frame5, Frame6, Person1, Person2, Person3, Person4, Customer }
