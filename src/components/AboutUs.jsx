@@ -31,6 +31,10 @@ const AboutUs = () => {
           <img src={Frame6} alt="" />
         </div>
       </div>
+
+      <div className="company-facts">
+         
+      </div>
     </div>
   );
 }
