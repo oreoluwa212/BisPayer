@@ -32,14 +32,16 @@ const NavBar = () => {
                 <a href="#">Services</a>
               </li>
             </Link>
-            <Link to={'/reviews'}>
+            <Link to={"/reviews"}>
               <li>
                 <a href="">Reviews</a>
               </li>
             </Link>
-            <li>
-              <a href="#">Support</a>
-            </li>
+            <Link to={"/support"}>
+              <li>
+                <a href="">Support</a>
+              </li>
+            </Link>
           </ul>
         </div>
         <div className="auth">
