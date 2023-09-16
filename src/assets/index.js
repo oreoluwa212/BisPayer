@@ -11,6 +11,7 @@ import Frame2 from './images/Frame2.png'
 import Frame3 from './images/Frame3.png'
 import Frame4 from './images/Frame4.png'
 import Frame5 from './images/Frame5.png'
+import Frame6 from './images/Frame6.png'
 
 
-export { Logo, Hero, grow, schedule, packages, box, statistics, calender, Frame1, Frame2, Frame3, Frame4, Frame5 }
+export { Logo, Hero, grow, schedule, packages, box, statistics, calender, Frame1, Frame2, Frame3, Frame4, Frame5, Frame6 }

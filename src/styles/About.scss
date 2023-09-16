@@ -1,0 +1,72 @@
+.about-container{
+
+   .about-grid{
+      display: flex;
+      width: 1000px;
+      gap: 80px;
+      margin-top: 80px;
+      height: 400px;
+      padding: 30px;
+
+      .grid-one{
+
+         .about-us{
+            display: inline-flex;
+            align-items: baseline;
+            gap: 14px;
+            h2 {
+                  font-size: 26px;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  color: #FF6B00;
+               }
+            
+               .line {
+                  width: 100px;
+                  border-bottom: 2px solid #FF6B00;
+               }
+         }
+         .boost{
+            line-height: 1rem;
+            padding-top: 40px;
+
+            h1 {
+                  font-family: Poppins;
+                  font-weight: 600;
+                  font-weight: 40px;
+
+               }
+            
+               span {
+                  font-size: 36px;
+                  font-family: Poppins;
+                  font-weight: 600;
+            
+               }
+         }
+         .boost-text{
+           font-family: Inter;
+           color: #060640;
+           font-size: 16px;
+           line-height: 1.5rem;
+         }
+         .get-btn{
+            padding: 10px 30px;
+            border: 0;
+            border-radius: 10px;
+            background: #FF6B00;
+            color: white;
+            font-size: 20px;
+            font-family: Poppins;
+         }
+
+      }
+      .grid-two{
+
+         img{
+            width: 450px;
+            border-radius: 30px;
+         }
+
+      }
+   }
+}
