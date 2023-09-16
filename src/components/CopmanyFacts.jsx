@@ -4,7 +4,7 @@ import { Person1, Person2, Person3, grow, packages, schedule } from "../assets";
 
 const CompanyFacts = () => {
   return (
-    <main className="container">
+    <div className="company-section">
       <div className="company-container">
         <div className="company-facts">
           <div className="team">
@@ -32,7 +32,7 @@ const CompanyFacts = () => {
                 <h3>Elliot Anderson</h3>
               </div>
             </div>
-            
+
             <div className="team-text">
               <h4>What We Do</h4>
               <div className="what-we-do">
@@ -86,7 +86,7 @@ const CompanyFacts = () => {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 

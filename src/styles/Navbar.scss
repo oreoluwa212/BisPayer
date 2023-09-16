@@ -1,124 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
-
-
-body {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-
-.container {
+.nav-menu {
+   height: 60px;
+   background: #fff;
+   border-radius: 10px;
+   padding-right: 15px;
    display: flex;
-   flex-direction: column;
-   align-items: center;
-   background: #ECF9FF;
-   height: 100vh;
+   position: sticky;
+   margin-top: 30px;
 
-   .nav-menu {
-      height: 60px;
-      background: #fff;
-      border-radius: 10px;
-      padding-right: 15px;
+   .nav-menu-bar {
       display: flex;
-      position: sticky;
-      margin-top: 30px;
+      gap: 170px;
+      width: 100%;
 
-      .nav-menu-bar {
+      a {
+         text-decoration: none;
+      }
+
+      .logo {
+         display: inline-flex;
+         align-items: center;
+         gap: 10px;
+         padding: 10px;
+         margin-left: 15px;
+
+
+         img {
+            width: 35px;
+            height: 20px;
+            cursor: pointer;
+         }
+
+         p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            color: #060640;
+            cursor: pointer;
+
+            span {
+               color: #00E5CC;
+               padding-left: 5px;
+               padding-right: 2px;
+            }
+         }
+      }
+
+      .nav-menu-options {
          display: flex;
-         gap: 170px;
-         width: 100%;
-         
-         a{
-            text-decoration: none;
-         }
+         justify-content: center;
+         align-items: center;
 
-         .logo {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px;
-            margin-left: 15px;
+         .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 40px;
 
+            li {
+               a {
+                  text-decoration: none;
+                  color: #060640;
+                  font-size: 16px;
+                  font-weight: 500;
+                  font-family: Poppins;
+               }
 
-            img {
-               width: 35px;
-               height: 20px;
-               cursor: pointer;
-            }
-
-            p {
-               font-family: 'Poppins', sans-serif;
-               font-size: 26px;
-               font-weight: 600;
-               color: #060640;
-               cursor: pointer;
-
-               span {
+               .active {
                   color: #00E5CC;
-                  padding-left: 5px;
-                  padding-right: 2px;
+                  text-decoration: underline;
                }
+
+
             }
+
+
+         }
+      }
+
+      .auth {
+         display: flex;
+         gap: 30px;
+         align-items: center;
+         font-size: 16px;
+         justify-content: flex-end;
+         font-family: Poppins;
+
+         a {
+            text-decoration: none;
+            color: #060640;
          }
 
-         .nav-menu-options {
+         .sign-in {
+            background: #060640;
+            border-radius: 10px;
+            width: 100px;
+            text-align: center;
+            height: 45px;
             display: flex;
+            align-items: center;
             justify-content: center;
-            align-items: center;
-
-            .nav-list {
-               display: flex;
-               list-style: none;
-               gap: 40px;
-
-               li {
-                  a {
-                     text-decoration: none;
-                     color: #060640;
-                     font-size: 16px;
-                     font-weight: 500;
-                     font-family: Poppins;
-                  }
-
-                  .active {
-                     color: #00E5CC;
-                     text-decoration: underline;
-                  }
-
-
-               }
-
-
-            }
-         }
-
-         .auth {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-            font-size: 16px;
-            justify-content: flex-end;
-            font-family: Poppins;
 
             a {
-               text-decoration: none;
-               color: #060640;
-            }
-
-            .sign-in {
-               background: #060640;
-               border-radius: 10px;
-               width: 100px;
-               text-align: center;
-               height: 45px;
-               display: flex;
-               align-items: center;
-               justify-content: center;
-
-               a {
-                  color: #ECF9FF;
-               }
+               color: #ECF9FF;
             }
          }
       }
