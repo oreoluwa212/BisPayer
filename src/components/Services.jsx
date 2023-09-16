@@ -21,14 +21,14 @@ const Services = () => {
             <img src={Frame2} width="300" alt="" />
             <div className="h3">
               <h3>The standard package to grow your business</h3>
-              <p>#50,000</p>
+              <p>#105,000</p>
             </div>
           </div>
           <div className="grid1">
             <img src={Frame3} width="300" alt="" />
             <div className="h3">
               <h3>The premium package to boost your promotion</h3>
-              <p>#50,000</p>
+              <p>#200,000</p>
             </div>
           </div>
         </div>
