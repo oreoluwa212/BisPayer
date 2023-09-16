@@ -20,7 +20,7 @@ const Services = () => {
           <div className="grid1">
             <img src={Frame2} width="300" alt="" />
             <div className="h3">
-              <h3>The standardpackage to grow your business</h3>
+              <h3>The standard package to grow your business</h3>
               <p>#50,000</p>
             </div>
           </div>
