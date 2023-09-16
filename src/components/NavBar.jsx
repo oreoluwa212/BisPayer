@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/LandingPage.scss";
 import { Logo } from "../assets";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -14,17 +15,23 @@ const NavBar = () => {
         </div>
         <div className="nav-menu-options">
           <ul className="nav-list">
-            <li>
-              <a className="active" href="#">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
+            <Link to={"/"}>
+              <li>
+                <a className="active" href="">
+                  Home
+                </a>
+              </li>
+            </Link>
+            <Link to={"/about-us"}>
+              <li>
+                <a href="">About</a>
+              </li>
+            </Link>
+            <Link to={'/services'}>
+              <li>
+                <a href="#">Services</a>
+              </li>
+            </Link>
             <li>
               <a href="#">Reviews</a>
             </li>
