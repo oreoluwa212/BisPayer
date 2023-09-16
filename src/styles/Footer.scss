@@ -12,8 +12,6 @@ body {
 .footer-container {
    background: #060640;
    padding: 50px 5% 0px;
-   // height: 380px;
-   margin-top: 50px;
 
    .footer-grid {
       display: grid;
@@ -40,6 +38,7 @@ body {
             align-items: center;
             gap: 10px;
             margin-left: 15px;
+            cursor: pointer;
 
             p {
                font-family: 'Poppins', sans-serif;
