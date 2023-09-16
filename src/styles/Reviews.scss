@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
 
-.our-work-section{
+.our-work-section {
    height: 80vh;
    display: flex;
    justify-content: center;
@@ -10,17 +10,19 @@
    gap: 40px;
    align-items: flex-start;
 
-   .heading{
-      h1{
+   .heading {
+      h1 {
          font-size: 34px;
          width: 400px;
          font-family: monospace;
          color: #060640;
       }
    }
-   .img{
+
+   .img {
       margin-top: 20px;
-      img{
+
+      img {
          width: 600px;
          height: 300px;
          border-radius: 40px;
@@ -28,8 +30,76 @@
    }
 }
 
-.reviews-container{
+.reviews-container {
    background: #fff;
    width: 100vw;
    height: 600px;
+
+   .reviews-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+
+      .text {
+         line-height: .7rem;
+         text-align: center;
+
+         h1 {
+            font-size: 38px;
+            font-family: Inter;
+            color: #060640;
+
+         }
+
+         p {
+            font-size: 24px;
+            font-family: Inter;
+            color: #060640;
+         }
+      }
+
+      .packages-grid {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+
+         .grid1 {
+            background: #060640;
+            color: white;
+            font-weight: 500;
+            font-family: Poppins;
+            margin-right: 30px;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px #555151;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            width: 280px;
+            height: 250px;
+
+            img {
+               border-radius: 6px;
+            }
+
+
+            .h3 {
+               padding: 0px 5px;
+
+               h3 {
+                  font-family: Poppins;
+                  font-size: 18px;
+                  padding: 0 5px;
+               }
+
+               p {
+                  font-family: Poppins;
+                  text-align: right;
+                  padding-right: 10px;
+                  font-size: 18px;
+               }
+            }
+         }
+      }
+   }
 }
