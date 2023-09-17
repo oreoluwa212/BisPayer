@@ -16,4 +16,10 @@ body {
    align-items: center;
    background: #ECF9FF;
    overflow-x: hidden;
+   
+   
+   @media (max-width: 334px) {
+         width: 400px;
+         padding: 20px 0;
+      }
 }

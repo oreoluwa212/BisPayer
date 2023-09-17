@@ -1,11 +1,15 @@
 .footer-container{
-   width: 100%;
+
    .footer-contain {
          background: #060640;
          padding: 50px 5% 0px;
 
-         @media (max-width: 656px) {
+         @media (max-width: 634px) {
                width: 100vw;
+               padding: 20px 0;
+            }
+         @media (max-width: 334px) {
+               width: 400px;
                padding: 20px 0;
             }
             
@@ -13,6 +17,13 @@
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
             color: white;
+            padding: 20px 0;
+
+
+            @media (max-width: 634px) {
+            grid-template-columns: 1fr ;
+                  padding: 0px 40px;
+               }
    
             a {
                color: gray;
@@ -85,5 +96,9 @@
          height: 60px;
          background: #000020;
    
+         @media (max-width: 334px) {
+               width: 400px;
+               padding: 20px 0;
+            }
       }
 }

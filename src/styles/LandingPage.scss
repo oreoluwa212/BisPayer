@@ -1,18 +1,79 @@
 .hero-section {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   margin-top: 80px;
+   margin-top: 40px;
    width: 65%;
-   height: 500px;
+   height: 600px;
+
+   @media (max-width: 1056px) {
+      transition: 850ms;
+      display: flex;
+      justify-content: center;
+   }
+
+   @media (max-width: 828px) {
+      display: flex;
+      flex-direction: column;
+      transition: 850ms;
+   }
+
+   @media (max-width: 478px) {
+      width: 400px;
+   }
 
    .hero1 {
-      padding-top: 40px;
+      @media (max-width: 1056px) {
+         width: 400px;
+         height: 300px;
+         transition: 850ms;
+      }
+
+      @media (max-width: 828px) {
+         width: 350px;
+         height: 350px;
+         transition: 850ms;
+         background: #060640;
+         border-radius: 20px;
+         padding: 0px 20px;
+         margin-top: 200px;
+         position: 
+         absolute;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      }
+
+      @media (max-width: 478px) {
+         width: 250px;
+         margin-left: 30px;
+      }
+
 
       h1 {
          width: 400px;
          font-size: 40px;
          color: #060640;
          font-family: Poppins;
+
+         @media (max-width: 1056px) {
+            width: 400px;
+            font-size: 30px;
+            transition: 850ms;
+         }
+
+         @media (max-width: 828px) {
+            width: 350px;
+            font-size: 26px;
+            transition: 850ms;
+            color: #ecf9ff;
+            text-align: right;
+         }
+
+                  @media (max-width: 478px) {
+                     text-align: left;
+                     font-size: 20px;
+                     width: 250px;
+                  }
       }
 
       h2 {
@@ -21,6 +82,24 @@
          font-weight: 500;
          font-family: Poppins;
 
+         @media (max-width: 1056px) {
+            width: 350px;
+            font-size: 14px;
+            transition: 850ms;
+         }
+
+         @media (max-width: 828px) {
+            font-size: 14px;
+            transition: 850ms;
+            color: #ecf9ff;
+            text-align: right;
+         }
+
+                  @media (max-width: 478px) {
+                     text-align: left;
+                     font-size: 12px;
+                     width: 200px;
+                  }
       }
 
       .sign-in {
@@ -35,16 +114,56 @@
          justify-content: space-between;
          padding: 10px;
 
+         @media (max-width: 1056px) {
+            width: 180px;
+            transition: 850ms;
+         }
+         @media (max-width: 828px) {
+            margin-left: 160px;
+            justify-content: right;
+            background: #9dfaef;
+            transition: 850ms;
+            margin-right: 0;
+         }
+                  @media (max-width: 478px) {
+                     text-align: left;
+                     font-size: 20px;
+                     margin-left: 0;
+                  }
+
          a {
             color: white;
             font-size: 20px;
             text-decoration: none;
+
+            @media (max-width: 1056px) {
+               font-size: 18px;
+               transition: 850ms;
+            }
+            @media (max-width: 828px) {
+               font-size: 16px;
+               transition: 850ms;
+               color: #060640;
+               font-weight: 600;
+            }
+
+
          }
 
          .arrow {
             color: #fff;
             font-size: 22px;
             width: 50px;
+
+            @media (max-width: 1056px) {
+               font-size: 18px;
+               transition: 850ms;
+            }
+            @media (max-width: 828px) {
+               font-size: 14px;
+               transition: 850ms;
+               color: #060640;
+            }
          }
       }
    }
@@ -55,6 +174,22 @@
          width: 500px;
          height: 450px;
 
+         @media (max-width: 1056px) {
+            width: 350px;
+            height: 370px;
+            transition: 850ms;
+         }
+
+         @media (max-width: 828px) {
+            height: 450px;
+            width: 70vw;
+            transition: 850ms;
+         }
+
+         @media (max-width: 414px) {
+            width: 300px;
+            padding: 0px;
+                  }
       }
    }
 }
@@ -67,13 +202,16 @@
    align-items: center;
    justify-content: center;
 
+   @media (max-width: 414px) {
+         margin-top: 40px;
+      }
+
    .heading1 {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 10px;
       padding-bottom: 10px;
-      // background: #000;
 
       h1 {
          color: #060640;
@@ -82,6 +220,10 @@
          font-weight: 600;
          font-family: 'Inter', sans-serif;
          height: 1px;
+
+         @media (max-width: 414px) {
+               font-size: 38px;
+            }
       }
 
       p {
@@ -92,6 +234,11 @@
          font-weight: 600;
          line-height: .9rem;
          font-size: 14px;
+
+         @media (max-width: 414px) {
+               width: 350px;
+               padding: 0px;
+            }
       }
    }
 
@@ -100,9 +247,12 @@
       grid-template-columns: 1fr 1fr 1fr;
       margin-top: 50px;
 
-                  // @media (max-width: 1056px) {
-                  //       grid-template-columns: 1fr 1fr;
-                  //    }
+         @media (max-width: 576px) {
+               display: flex;
+               flex-direction: column;
+               gap: 30px;
+               transition: 850ms;
+            }
 
       .choose-packages {
          background: #fff;
@@ -119,9 +269,14 @@
             transition: 850ms;
          }
 
-                  @media (max-width: 732px) {
-                     width: 100px;
-                  }
+         @media (max-width: 732px) {
+            width: 100px;
+         }
+
+                        @media (max-width: 576px) {
+                           width: 250px;
+                           transition: 850ms;
+                        }
 
          .package-bg {
             width: 70px;
@@ -132,18 +287,18 @@
             border-radius: 10px;
             background: #9dfaef;
 
-                        @media (max-width: 1056px) {
-                              height: 50px;
-                              width: 50px;
-                           }
+            @media (max-width: 1056px) {
+               height: 50px;
+               width: 50px;
+            }
 
             .calender {
                color: #fff;
                font-size: 24px;
 
-                           @media (max-width: 1056px) {
-                                 font-size: 20px;
-                              }
+               @media (max-width: 1056px) {
+                  font-size: 20px;
+               }
             }
          }
 
@@ -178,10 +333,10 @@
                   font-size: 14px;
                }
 
-                              @media (max-width: 732px) {
-                                 font-size: 12px;
-                                 line-height: 1rem;
-                              }
+               @media (max-width: 732px) {
+                  font-size: 12px;
+                  line-height: 1rem;
+               }
             }
          }
       }
