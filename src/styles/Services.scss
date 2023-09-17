@@ -1,8 +1,11 @@
 .services-container{
    height: 100vh;
    width: 1000px;
-   // margin-top: 40px;
-   padding: 30px;
+   // padding: 30px;
+   
+   @media (max-width: 1000px) {
+         height: 1000px;
+      }
 
    .services-package{
 
@@ -12,23 +15,38 @@
          align-items: center;
          padding-top: 40px;
 
+         @media (max-width: 1000px) {
+               // display: flex;
+               // flex-direction: column;
+               justify-content: center;
+               align-items: center;
+            }
+
          h1{
             font-size: 40px;
             font-family: monospace;
             color: #060640;
          }
 
-         .toggle-btns{
-            background: #fff;
-            height: 66px;
-            width: 126px;
-            border-radius: 10px;
-         }
+         // .toggle-btns{
+         //    background: #fff;
+         //    height: 66px;
+         //    width: 126px;
+         //    border-radius: 10px;
+         // }
       }
 
       .packages-grid{
          display: grid;
          grid-template-columns: repeat(3, 1fr);
+
+         @media (max-width: 1000px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+         }
 
          .grid1{
             background: #FFF;
@@ -39,6 +57,7 @@
             flex-direction: column;
             padding: 2px;
             width: 300px;
+            
 
             img {
                   border-radius: 6px;

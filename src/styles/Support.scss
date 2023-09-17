@@ -431,12 +431,13 @@
             align-items: center;
          }
 
-                  @media (max-width: 420px) {
-                     width: 300px;
-                     margin: 5px 21%;
-                     line-height: 1.5rem;
-                     transition: 850ms;
-                  }
+         @media (max-width: 420px) {
+            width: 300px;
+            margin: 5px 21%;
+            line-height: 1.5rem;
+            transition: 850ms;
+         }
+
          .accordion {
             display: grid;
             grid-template-columns: 1fr 1fr;

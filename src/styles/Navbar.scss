@@ -16,13 +16,12 @@
       position: relative;
       transition: 850ms;
    }
+
    @media (max-width: 508px) {
       position: relative;
       width: 350px;
       transition: 850ms;
    }
-
-   
 
    .nav-menu-bar {
       display: flex;
@@ -122,6 +121,7 @@
          a {
             text-decoration: none;
             color: #060640;
+            cursor: pointer;
          }
 
          .sign-in {
@@ -136,6 +136,7 @@
 
             a {
                color: #ECF9FF;
+               cursor: pointer;
             }
          }
       }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Person4 } from "../assets";
-import '../styles/Support.scss'
+import "../styles/Support.scss";
 
 const Support = () => {
   return (

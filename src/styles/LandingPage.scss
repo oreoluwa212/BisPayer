@@ -36,8 +36,8 @@
          border-radius: 20px;
          padding: 0px 20px;
          margin-top: 200px;
-         position: 
-         absolute;
+         position:
+            absolute;
          display: flex;
          flex-direction: column;
          justify-content: center;
@@ -69,11 +69,11 @@
             text-align: right;
          }
 
-                  @media (max-width: 478px) {
-                     text-align: left;
-                     font-size: 20px;
-                     width: 250px;
-                  }
+         @media (max-width: 478px) {
+            text-align: left;
+            font-size: 20px;
+            width: 250px;
+         }
       }
 
       h2 {
@@ -95,11 +95,11 @@
             text-align: right;
          }
 
-                  @media (max-width: 478px) {
-                     text-align: left;
-                     font-size: 12px;
-                     width: 200px;
-                  }
+         @media (max-width: 478px) {
+            text-align: left;
+            font-size: 12px;
+            width: 200px;
+         }
       }
 
       .sign-in {
@@ -118,6 +118,7 @@
             width: 180px;
             transition: 850ms;
          }
+
          @media (max-width: 828px) {
             margin-left: 160px;
             justify-content: right;
@@ -125,11 +126,12 @@
             transition: 850ms;
             margin-right: 0;
          }
-                  @media (max-width: 478px) {
-                     text-align: left;
-                     font-size: 20px;
-                     margin-left: 0;
-                  }
+
+         @media (max-width: 478px) {
+            text-align: left;
+            font-size: 20px;
+            margin-left: 0;
+         }
 
          a {
             color: white;
@@ -140,6 +142,7 @@
                font-size: 18px;
                transition: 850ms;
             }
+
             @media (max-width: 828px) {
                font-size: 16px;
                transition: 850ms;
@@ -159,6 +162,7 @@
                font-size: 18px;
                transition: 850ms;
             }
+
             @media (max-width: 828px) {
                font-size: 14px;
                transition: 850ms;
@@ -189,7 +193,7 @@
          @media (max-width: 414px) {
             width: 300px;
             padding: 0px;
-                  }
+         }
       }
    }
 }
@@ -203,8 +207,8 @@
    justify-content: center;
 
    @media (max-width: 414px) {
-         margin-top: 40px;
-      }
+      margin-top: 40px;
+   }
 
    .heading1 {
       display: flex;
@@ -222,8 +226,8 @@
          height: 1px;
 
          @media (max-width: 414px) {
-               font-size: 38px;
-            }
+            font-size: 38px;
+         }
       }
 
       p {
@@ -236,9 +240,9 @@
          font-size: 14px;
 
          @media (max-width: 414px) {
-               width: 350px;
-               padding: 0px;
-            }
+            width: 350px;
+            padding: 0px;
+         }
       }
    }
 
@@ -247,12 +251,12 @@
       grid-template-columns: 1fr 1fr 1fr;
       margin-top: 50px;
 
-         @media (max-width: 576px) {
-               display: flex;
-               flex-direction: column;
-               gap: 30px;
-               transition: 850ms;
-            }
+      @media (max-width: 576px) {
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+         transition: 850ms;
+      }
 
       .choose-packages {
          background: #fff;
@@ -273,10 +277,10 @@
             width: 100px;
          }
 
-                        @media (max-width: 576px) {
-                           width: 250px;
-                           transition: 850ms;
-                        }
+         @media (max-width: 576px) {
+            width: 250px;
+            transition: 850ms;
+         }
 
          .package-bg {
             width: 70px;

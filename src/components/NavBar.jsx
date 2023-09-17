@@ -4,19 +4,39 @@ import { Logo } from "../assets";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX, faBars } from "@fortawesome/free-solid-svg-icons";
+import SignUp from "./SignUp";
+import '../styles/SignupLogin.scss'
 
 const NavBar = () => {
   // UseState for opening the Drawer
   const [openDrawer, setOpenDrawer] = useState(false);
+
+    // OnClick function handling Open Drawer
+  const handleClose = () => {
+    setOpenDrawer(false);
+  };
+
+  // UseState for opening the Login  and signup Modal
+  const [openLoginModal, setOpenLoginModal] = useState(false);
+  const [openSignUpModal, setOpenSignUpModal] = useState(false);
 
   // OnClick function handling Open Drawer
   const onClickMenu = () => {
     setOpenDrawer(true);
   };
 
-  // OnClick function handling Open Drawer
-  const handleClose = () => {
-    setOpenDrawer(false);
+
+
+  // Onclick function handling LogIn
+  const onClickOpenLogIn = () => {
+    setOpenSignUpModal(false);
+    setOpenLoginModal(true);
+  };
+
+  // Onclick function handling SignUp
+  const onClickOpenSignup = () => {
+    setOpenLoginModal(false);
+    setOpenSignUpModal(true);
   };
   return (
     <div className="nav-menu">
@@ -60,10 +80,10 @@ const NavBar = () => {
         </div>
         <div className="auth">
           <p>
-            <a href="#">Login</a>
+            {/* <a onClick={onClickOpenLogIn}>Login</a> */}
           </p>
           <button className="sign-in">
-            <a href="#">SignUp</a>
+            <a onClick={onClickOpenSignup}>SignUp</a>
           </button>
         </div>
       </div>
@@ -110,6 +130,19 @@ const NavBar = () => {
             </Link>
           </div>
         </div>
+      )}
+
+      {openLoginModal && (
+        <Login
+          setOpenLoginModal={setOpenLoginModal}
+          onClickOpenSignup={onClickOpenSignup}
+        />
+      )}
+      {openSignUpModal && (
+        <SignUp
+          setOpenSignUpModal={setOpenSignUpModal}
+          onClickOpenLogIn={onClickOpenLogIn}
+        />
       )}
     </div>
   );
