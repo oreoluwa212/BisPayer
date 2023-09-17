@@ -109,4 +109,69 @@
          }
       }
    }
+
+   .mobile-nav-container {
+      display: none;
+
+      @media (max-width: 960px) {
+         display: flex;
+         justify-content: space-between;
+         padding: 24px 70px;
+         align-items: center;
+      }
+
+      // @media (max-width: 598px) {
+      //    padding: 24px 50px;
+      // }
+
+      // @media (max-width: 420px) {
+      //    overflow-x: hidden;
+      // }
+   }
+
+   .mobile-nav-items {
+      background: #24444e;
+      color: white;
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      transition: 850ms;
+      z-index: 1;
+      transform-origin: 350ms;
+      padding: 50px 20px;
+      align-items: center;
+      text-align: center;
+      transition: 850ms;
+
+      @media (max-width: 450px) {
+         width: 70%;
+         gap: 30px;
+      }
+
+      @media (max-width: 370px) {
+         width: 90%;
+      }
+
+
+      .first {
+         display: flex;
+         flex-direction: column;
+         gap: 48px;
+         text-align: center;
+         transition: 850ms;
+
+         @media (max-width: 450px) {
+            gap: 30px;
+         }
+
+         @media (max-width: 420px) {
+            overflow-x: hidden;
+         }
+      }
+   }
 }
