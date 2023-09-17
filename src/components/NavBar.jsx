@@ -2,6 +2,8 @@ import React from "react";
 import "../styles/LandingPage.scss";
 import { Logo } from "../assets";
 import { Link } from "react-router-dom";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faX } from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
   return (
@@ -40,6 +42,7 @@ const NavBar = () => {
             <Link to={"/support"}>
               <li>
                 <a href="">Support</a>
+                {/* <FontAwesomeIcon icon={faX}/> */}
               </li>
             </Link>
           </ul>

@@ -1,5 +1,8 @@
 import React from "react";
 import { Hero } from "../assets";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 
 const HeroSection = () => {
@@ -14,6 +17,7 @@ const HeroSection = () => {
         </h2>
         <button className="sign-in">
           <a href="#">Get started</a>
+          <FontAwesomeIcon icon={faArrowRight} className="arrow" />
         </button>
       </div>
       <div className="hero2">
