@@ -1,5 +1,5 @@
 .our-work-section {
-   height: 70vh;
+   height: 60vh;
    display: flex;
    justify-content: center;
    margin-top: 80px;
@@ -16,6 +16,9 @@
       transition: 850ms;
       padding-top: 20px;
       margin-top: 30px;
+   }
+   @media (max-width: 508px) {
+      height: 70vh;
    }
 
    .heading {
@@ -84,8 +87,11 @@
 .reviews-container {
    background: #fff;
    width: 100vw;
-   height: 1300px;
+   height: 700px;
 
+   @media(max-width: 508px){
+      height: 1300px;
+   }
 
    .reviews-section {
       display: flex;
@@ -109,7 +115,7 @@
             color: #060640;
 
             @media (max-width: 508px) {
-               font-size: 20px;
+               font-size: 16px;
                width: 350px;
                line-height: 1.2rem;
                transition: 850ms;
@@ -120,6 +126,7 @@
       .packages-grid {
          display: grid;
          grid-template-columns: repeat(3, 1fr);
+         gap: 40px;
 
          @media (max-width: 1060px) {
             display: flex;
