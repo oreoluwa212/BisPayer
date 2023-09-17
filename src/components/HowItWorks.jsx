@@ -1,9 +1,6 @@
 import React from 'react'
 import { box, calender, grow, packages, schedule, statistics } from '../assets';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarCheck
-} from "@fortawesome/free-solid-svg-icons";
+
 
 const HowItWorks = () => {
   return (

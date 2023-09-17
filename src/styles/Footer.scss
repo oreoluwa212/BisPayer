@@ -3,7 +3,12 @@
    .footer-contain {
          background: #060640;
          padding: 50px 5% 0px;
-   
+
+         @media (max-width: 656px) {
+               width: 100vw;
+               padding: 20px 0;
+            }
+            
          .footer-grid {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
