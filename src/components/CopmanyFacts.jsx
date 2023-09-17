@@ -45,9 +45,7 @@ const CompanyFacts = () => {
                       <h2>Website Strategy</h2>
                       <p>
                         Our web strategy experts craft digital roadmaps tailored
-                        to your business objectives. With a keen focus on user
-                        experience and market trends, we guide you toward a
-                        competitive online edge.
+                        to your business objectives. 
                       </p>
                     </div>
                   </div>
@@ -57,9 +55,7 @@ const CompanyFacts = () => {
                     </div>
                     <div className="grid1">
                       <h2>Digital Marketing</h2>
-                      <p>
-                        In the fast-paced digital landscape, we drive your brand
-                        forward with precision. Our data-driven digital
+                      <p>Our data-driven digital
                         marketing campaigns amplify your reach and engagement,
                         delivering tangible results.
                       </p>
@@ -73,15 +69,12 @@ const CompanyFacts = () => {
                       <h2>Quality Building</h2>
                       <p>
                         We're committed to building a foundation of excellence
-                        in everything we do. From product development to
-                        customer service, quality is at the core of our values,
-                        ensuring long-term success and client satisfaction."
+                        in everything we do. 
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* <button className="get-btn"> Get Started</button> */}
             </div>
           </div>
         </div>

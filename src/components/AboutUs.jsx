@@ -20,8 +20,7 @@ const AboutUs = () => {
             <h4>
               "At BisPayer, we're the driving force behind your business
               success. Our passion is to elevate brands, boost visibility, and
-              ignite growth. With a blend of innovation and strategy, we light
-              the path to your prosperity. Join us on this journey toward
+              ignite growth. Join us on this journey toward
               limitless potential."
             </h4>
             <button className="get-btn"> Get Started</button>

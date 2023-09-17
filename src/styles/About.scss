@@ -7,7 +7,38 @@
       height: 100vh;
       padding-top: 30px;
 
+      @media (max-width: 1060px) {
+         width: 700px;
+         transition: 850ms;
+         padding-top: 10px;
+         margin-top: 50px;
+      }
+
+      @media (max-width: 700px) {
+         margin-left: 50px;
+         flex-direction: column;
+         align-items: center;
+         height: 900px;
+      }
+
+      @media (max-width: 508px) {
+         flex-direction: column;
+         width: 350px;
+         justify-content: center;
+         align-items: center;
+      }
+
       .grid-one {
+
+         @media (max-width: 700px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+         }
+
          .about-us {
             display: inline-flex;
             align-items: baseline;
@@ -17,11 +48,26 @@
                font-size: 26px;
                font-family: Verdana, Geneva, Tahoma, sans-serif;
                color: #FF6B00;
+
+               @media (max-width: 1060px) {
+                  width: 150px;
+                  transition: 850ms;
+               }
+
+               @media (max-width: 508px) {
+                  font-size: 20px;
+               }
             }
 
             .line {
                width: 100px;
                border-bottom: 2px solid #FF6B00;
+
+               @media (max-width: 1060px) {
+                  width: 60px;
+                  transition: 850ms;
+
+               }
             }
          }
 
@@ -29,18 +75,52 @@
             line-height: 1rem;
             padding-top: 40px;
 
+            @media (max-width: 1060px) {
+               line-height: .5rem;
+               padding-top: 10px;
+            }
+
+            @media (max-width: 700px) {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               gap: 20px;
+               text-align: center;
+               padding-top: 50px;
+            }
+
             h1 {
                font-family: Poppins;
                font-weight: 600;
                font-weight: 40px;
 
+               @media (max-width: 1060px) {
+                  font-size: 32px;
+                  transition: 850ms;
+                  width: 340px;
+               }
+
+               @media (max-width: 700px) {
+                  font-size: 32px;
+                  text-align: center;
+               }
             }
+
 
             span {
                font-size: 36px;
                font-family: Poppins;
                font-weight: 600;
 
+               @media (max-width: 1060px) {
+                  font-size: 42px;
+                  transition: 850ms;
+               }
+
+               @media (max-width: 700px) {
+                  text-align: center;
+               }
             }
          }
 
@@ -49,15 +129,23 @@
             color: #060640;
             font-size: 16px;
             line-height: 1.5rem;
+
+            @media (max-width: 700px) {
+               margin-left: 10px;
+               font-size: 14px;
+               width: 500px;
+               text-align: center;
+            }
          }
 
          .get-btn {
-            padding: 10px 30px;
+            padding: 10px 20px;
             border: 0;
             border-radius: 10px;
             background: #FF6B00;
             color: white;
-            font-size: 20px;
+            font-size: 18px;
+            box-shadow: 0px 0px 2px #060640;
             font-family: Poppins;
          }
 
@@ -68,6 +156,16 @@
          img {
             width: 450px;
             border-radius: 30px;
+
+            @media (max-width: 1060px) {
+               width: 350px;
+               height: 350px;
+               transition: 850ms;
+            }
+
+            @media (max-width: 700px) {
+               width: 500px;
+            }
          }
 
       }
@@ -80,6 +178,8 @@
    display: flex;
    justify-content: center;
 
+   @media (max-width: 508px) {}
+
 
    .company-container {
       border-top: 4px solid white;
@@ -88,6 +188,7 @@
       display: flex;
       padding-top: 40px;
       justify-content: center;
+      height: 1000px;
 
       .company-facts {
          display: flex;
@@ -116,6 +217,11 @@
                justify-content: center;
                gap: 150px;
                padding-top: 70px;
+
+               @media (max-width: 508px) {
+                  flex-direction: column;
+                  gap: 10px;
+               }
 
                .mem-one {
                   display: flex;
@@ -154,11 +260,22 @@
                }
 
                .what-we-do {
-                  padding: 30px 40px;
 
                   .what-we-do-grid {
                      display: flex;
                      gap: 20px;
+
+                     @media (max-width: 1060px) {
+                        transition: 850ms;
+                     }
+
+                     @media (max-width: 828px) {
+                        position: relative;
+                        transition: 850ms;
+                        flex-direction: column;
+                        gap: 5px;
+                        overflow-y: hidden;
+                     }
 
                      .web {
                         display: flex;
@@ -174,14 +291,22 @@
                            display: flex;
                            flex-direction: column;
                            padding: 10px;
-                           justify-content: center;
                            align-items: center;
-                           width: 290px;
+                           width: 300px;
+
+                           @media (max-width: 1060px) {
+                              transition: 850ms;
+                           }
                         }
 
                         p {
                            text-align: center;
-                           width: 300px;
+
+                           @media (max-width: 1060px) {
+                              line-height: 1.5rem;
+                              font-family: monospace;
+                              transition: 850ms;
+                           }
                         }
 
                         .img {
