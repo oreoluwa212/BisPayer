@@ -11,9 +11,9 @@ const ReviewsPage = () => {
     <>
       <section className="container">
         <NavBar />
-        <Reviews/>
-        <Footer/>
+        <Reviews />
       </section>
+      <Footer />
     </>
   );
 }

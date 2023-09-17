@@ -21,7 +21,6 @@ const Reviews = () => {
           </div>
           <div className="packages-grid">
             <div className="grid1">
-              {/* <img src={Frame1} width="300" alt="" /> */}
               <div className="h3">
                 <h3>Efficient Collaborating</h3>
                 <h4>
@@ -29,22 +28,20 @@ const Reviews = () => {
                   actively listen to our ideas and concerns, fostering a
                   productive partnership
                 </h4>
-                <p>-Lauren Jude</p>
+                <p>- Lauren Jude</p>
               </div>
             </div>
             <div className="grid1">
-              {/* <img src={Frame2} width="300" alt="" /> */}
               <div className="h3">
                 <h3>Intuitive Design</h3>
                 <h4>
                   The intuitive design of your products and services is a
                   game-changer. Everything feels user-friendly and effortless .
                 </h4>
-                <p>-Asa Daniels</p>
+                <p>- Asa Daniels</p>
               </div>
             </div>
             <div className="grid1">
-              {/* <img src={Frame3} width="300" alt="" /> */}
               <div className="h3">
                 <h3>Mind-Blowing Service</h3>
                 <h4>
@@ -52,7 +49,7 @@ const Reviews = () => {
                   expectations. The level of dedication and attention to detail
                   is truly mind-blowing.{" "}
                 </h4>
-                <p>-Johnny Drille</p>
+                <p>- Johnny Dom</p>
               </div>
             </div>
           </div>
