@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/LandingPage.scss";
 import { Logo } from "../assets";
 import { Link } from "react-router-dom";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faX } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faX } from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
+  // UseState for opening the Drawer 
+  const [ openDrawer, setOpenDrawer ] = useState(false)
+
+  // OnClick function handling Open Drawer 
+  const onClickMenu = () => {
+    setOpenDrawer(true);
+  }
+
+  // OnClick function handling Open Drawer 
+  const handleClose = () => {
+    setOpenDrawer(false);
+  }
   return (
     <div className="nav-menu">
       <div className="nav-menu-bar">
