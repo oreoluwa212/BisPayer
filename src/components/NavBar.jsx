@@ -28,7 +28,7 @@ const NavBar = () => {
           </p>
         </div>
         <div className="nav-menu-options">
-          <ul className="nav-list">
+          <ul className="first">
             <Link to={"/"}>
               <li>
                 <a className="active" href="">
