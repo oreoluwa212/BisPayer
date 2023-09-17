@@ -20,11 +20,23 @@
          align-items: center;
       }
 
+      @media (max-width: 620px) {}
+
       .support-text {
 
          @media (max-width: 1060px) {
             transition: 850ms;
          }
+
+         @media (max-width: 620px) {
+            transition: 850ms;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+
+
 
          h1 {
             font-size: 55px;
@@ -41,6 +53,24 @@
                line-height: 3.5rem;
                transition: 850ms;
             }
+
+            @media (max-width: 620px) {
+               width: 500px;
+               font-size: 45px;
+               text-align: left;
+               line-height: 3.5rem;
+               transition: 850ms;
+            }
+
+            @media (max-width: 420px) {
+               width: 350px;
+               font-size: 35px;
+               text-align: left;
+               line-height: 2rem;
+               transition: 850ms;
+            }
+
+
          }
 
          span {
@@ -50,11 +80,37 @@
          .sub {
             width: 600px;
 
+            @media (max-width: 620px) {
+               transition: 850ms;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               gap: 10px;
+               align-items: center;
+            }
+
             h3 {
                font-size: 18px;
                font-family: Poppins;
                color: #060640;
+
+               @media (max-width: 620px) {
+                  width: 500px;
+                  font-size: 15px;
+                  text-align: left;
+                  line-height: 1.5rem;
+                  transition: 850ms;
+               }
+
+               @media (max-width: 420px) {
+                  width: 300px;
+                  font-size: 15px;
+                  text-align: left;
+                  line-height: 1.5rem;
+                  transition: 850ms;
+               }
             }
+
 
             button {
                background: #FF6B00;
@@ -82,6 +138,11 @@
          img {
             width: 450px;
             height: 400px;
+
+            @media (max-width: 420px) {
+               width: 360px;
+               transition: 850ms;
+            }
          }
       }
    }
@@ -153,6 +214,11 @@
                transition: 850ms;
             }
 
+            @media (max-width: 420px) {
+               margin-left: 20px;
+               transition: 850ms;
+            }
+
             h1 {
                font-family: Poppins;
                font-size: 24px;
@@ -160,6 +226,14 @@
                @media (max-width: 852px) {
                   font-size: 26px;
                   width: 500px;
+                  transition: 850ms;
+               }
+
+               @media (max-width: 420px) {
+                  width: 400px;
+                  font-size: 26px;
+                  text-align: left;
+                  line-height: 1.5rem;
                   transition: 850ms;
                }
             }
@@ -309,6 +383,13 @@
          h1 {
             font-family: Poppins;
             font-size: 32px;
+
+            @media (max-width: 420px) {
+               width: 320px;
+               font-size: 22px;
+               line-height: 1.5rem;
+               transition: 850ms;
+            }
          }
 
          p {
@@ -322,6 +403,14 @@
             @media (max-width: 664px) {
                width: 400px;
                text-align: center;
+            }
+
+            @media (max-width: 420px) {
+               width: 320px;
+               font-size: 18px;
+               text-align: left;
+               line-height: 1.5rem;
+               transition: 850ms;
             }
          }
       }
@@ -342,6 +431,12 @@
             align-items: center;
          }
 
+                  @media (max-width: 420px) {
+                     width: 300px;
+                     margin: 5px 21%;
+                     line-height: 1.5rem;
+                     transition: 850ms;
+                  }
          .accordion {
             display: grid;
             grid-template-columns: 1fr 1fr;
