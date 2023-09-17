@@ -26,7 +26,7 @@ const Faq = () => {
                 </p>
               </div>
             </li>
-            <li>
+            {/* <li>
               <input type="radio" name="accordion" id="second" />
               <label for="second">
                 How long until we deliver your first blog post?
@@ -38,7 +38,7 @@ const Faq = () => {
                   content marketing strategy that we MUST do before.
                 </p>
               </div>
-            </li>
+            </li> */}
             <li>
               <input type="radio" name="accordion" id="third" />
               <label for="third">

@@ -3,14 +3,29 @@
    display: flex;
    justify-content: center;
    height: 600px;
-   margin-top: 80px;
+   margin-top: 60px;
    width: 1200px;
+
+   @media (max-width: 1060px) {
+      height: 800px;
+   }
 
    .support-body {
       display: grid;
       grid-template-columns: 2fr 1fr;
 
+      @media (max-width: 1060px) {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
       .support-text {
+
+         @media (max-width: 1060px) {
+            transition: 850ms;
+         }
+
          h1 {
             font-size: 55px;
             font-family: Arial, Helvetica, sans-serif;
@@ -18,6 +33,14 @@
             width: 750px;
             line-height: 3.3rem;
             color: #060640;
+
+            @media (max-width: 1060px) {
+               width: 600px;
+               font-size: 60px;
+               text-align: left;
+               line-height: 3.5rem;
+               transition: 850ms;
+            }
          }
 
          span {
@@ -68,11 +91,33 @@
 .contact-container {
    color: #060640;
 
+   @media (max-width: 1060px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
    .contact-sec {
-      // background: #000;
-      height: 100vh;
-      width: 1300px;
+      width: 1000px;
+      height: 800px;
       padding: 10px;
+
+
+      @media (max-width: 1060px) {
+         margin-top: 100px;
+         height: 800px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      @media (max-width: 852px) {
+         height: 1300px;
+      }
+
+      @media (max-width: 508px) {
+         height: 1000px;
+      }
 
       .contact-section {
          display: flex;
@@ -80,17 +125,43 @@
          width: 100vw;
          padding: 10px;
 
+         @media (max-width: 852px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 1000px;
+         }
+
+         @media (max-width: 508px) {
+            flex-direction: column;
+            align-items: center;
+         }
+
          .contact-text {
-            // background: violet;
-            width: 30%;
+            width: 350px;
             padding: 10px;
             display: flex;
             flex-direction: column;
-            // gap: 30px;
+
+            @media (max-width: 508px) {
+               width: 370px;
+               transition: 850ms;
+            }
+
+            @media (max-width: 852px) {
+               width: 400px;
+               transition: 850ms;
+            }
 
             h1 {
                font-family: Poppins;
                font-size: 24px;
+
+               @media (max-width: 852px) {
+                  font-size: 26px;
+                  width: 500px;
+                  transition: 850ms;
+               }
             }
 
             p {
@@ -118,14 +189,25 @@
          .contact-form-container {
             background: #fff;
             border-radius: 30px;
-            width: 35%;
             top: 200px;
             padding: 30px;
             position: relative;
             display: flex;
             justify-content: center;
-            margin-left: 100px;
+            margin-left: 30px;
+            width: 400px;
 
+
+            @media (max-width: 852px) {
+               margin-right: 20px;
+               width: 300px;
+               transition: 850ms;
+            }
+
+            @media (max-width: 508px) {
+               top: 40px;
+               transition: 850ms;
+            }
 
 
             .contact-txt {
@@ -148,6 +230,17 @@
                      &::placeholder {
                         font-size: 14px;
                         padding: 10px;
+                     }
+
+                     @media (max-width: 852px) {
+                        margin-right: 0px;
+                        width: 300px;
+                        transition: 850ms;
+                     }
+
+                     @media (max-width: 508px) {
+                        width: 250px;
+                        transition: 850ms;
                      }
                   }
 
@@ -190,9 +283,17 @@
 // -------------------------------------- FAQs ---------------------------------------------
 .faq-container {
    height: 100vh;
+   width: 1200px;
    border-top: 2px solid white;
    display: flex;
    justify-content: center;
+   align-items: center;
+
+   @media (max-width: 830px) {
+      width: 1000px;
+      margin-right: 100px;
+      padding-left: 60px;
+   }
 
    .faq-section {
       margin-top: 180px;
@@ -205,12 +306,23 @@
          align-items: center;
          flex-direction: column;
 
-         h1{
+         h1 {
             font-family: Poppins;
-            font-size: 28px;
+            font-size: 32px;
          }
-         p{
+
+         p {
             font-size: 20px;
+
+            @media (max-width: 930px) {
+               width: 550px;
+               text-align: center;
+            }
+
+            @media (max-width: 664px) {
+               width: 400px;
+               text-align: center;
+            }
          }
       }
 
@@ -222,12 +334,24 @@
          color: #fff;
          margin-left: 50px;
 
+         @media (max-width: 830px) {
+            margin: 10px 25%;
+            height: 380px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
          .accordion {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             width: 100%;
             max-width: 750px;
+
+            @media (max-width: 830px) {
+               grid-template-columns: 1fr;
+            }
 
             .contain {
                background: #060640;
