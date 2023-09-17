@@ -195,7 +195,7 @@
       height: 100vh;
       display: flex;
       flex-direction: column;
-      gap: 48px;
+      gap: 38px;
       position: fixed;
       top: 0;
       right: 0;
@@ -208,7 +208,7 @@
       transition: 850ms;
 
       .logo {
-         font-size: 30px;
+         font-size: 12px;
 
          a {
             text-decoration: none;
@@ -223,14 +223,14 @@
       .first {
          display: flex;
          flex-direction: column;
-         gap: 48px;
+         gap: 38px;
          text-align: center;
          transition: 850ms;
 
          a {
             color: white;
             text-decoration: none;
-            font-size: 30px;
+            font-size: 12px;
             font-family: Poppins;
          }
       }
