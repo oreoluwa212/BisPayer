@@ -18,7 +18,9 @@
          align-items: center;
       }
 
-      @media (max-width: 620px) {}
+      @media (max-width: 620px) {
+         padding: 10px 5%;
+      }
 
       .support-text {
 

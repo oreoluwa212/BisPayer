@@ -31,7 +31,6 @@
 
          @media (max-width: 1060px) {
             text-align: right;
-            width: 700px;
             transition: 850ms;
          }
 
@@ -43,7 +42,6 @@
          @media (max-width: 508px) {
             font-size: 26px;
             transition: 850ms;
-            width: 400px;
          }
       }
    }
@@ -63,7 +61,7 @@
          }
 
          @media (max-width: 828px) {
-            width: 550px;
+            width: 450px;
             height: 350px;
             transition: 850ms;
          }
@@ -76,7 +74,7 @@
 
          @media (max-width: 508px) {
             height: 300px;
-            width: 400px;
+            width: 350px;
             transition: 850ms;
          }
 
