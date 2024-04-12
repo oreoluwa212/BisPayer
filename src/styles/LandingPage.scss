@@ -1,9 +1,7 @@
 .hero-section {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   margin-top: 40px;
-   width: 65%;
-   height: 600px;
+   display: flex;
+   width: 80%;
+   
 
    @media (max-width: 1056px) {
       transition: 850ms;

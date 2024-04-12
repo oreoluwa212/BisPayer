@@ -8,26 +8,16 @@ import SignUp from "./SignUp";
 import '../styles/SignupLogin.scss'
 
 const NavBar = () => {
-  // UseState for opening the Drawer
   const [openDrawer, setOpenDrawer] = useState(false);
-
-    // OnClick function handling Open Drawer
   const handleClose = () => {
     setOpenDrawer(false);
   };
-
-  // UseState for opening the Login  and signup Modal
   const [openLoginModal, setOpenLoginModal] = useState(false);
   const [openSignUpModal, setOpenSignUpModal] = useState(false);
-
-  // OnClick function handling Open Drawer
   const onClickMenu = () => {
     setOpenDrawer(true);
   };
 
-
-
-  // Onclick function handling LogIn
   const onClickOpenLogIn = () => {
     setOpenSignUpModal(false);
     setOpenLoginModal(true);

@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase.config";
-
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-
-
+import { FaTimes } from 'react-icons/fa'
 
 const SignUp = ({ setOpenSignUpModal, onClickOpenLogIn }) => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [pwd, setPwd] = useState("");
   const [errMsg, setErrMsg] = useState("");
-  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -35,25 +32,14 @@ const SignUp = ({ setOpenSignUpModal, onClickOpenLogIn }) => {
     <div className="login-wrapper">
       <div className="login-container">
         <div className="login-section">
-          <div className="logo-text">
-            <h1 onClick={() => setOpenSignUpModal(false)}>X</h1>
+          <div onClick={() => setOpenSignUpModal(false)} className="logo-text">
+            <FaTimes />
           </div>
 
           <div className="login-style">
             <div className="log-in">
               <h1>Sign Up</h1>
               <p>Enter your credentials to access your account</p>
-              {/* <div className="button-div">
-                <button>
-                  <h3>Sign Up with google</h3>
-                </button>
-              </div>
-
-              <div className="or-">
-                <hr />
-                <p>or</p>
-                <hr />
-              </div> */}
 
               <form className="form-place" onSubmit={handleSubmit}>
                 <div className="email">
@@ -68,7 +54,6 @@ const SignUp = ({ setOpenSignUpModal, onClickOpenLogIn }) => {
                 <div className="password">
                   <div className="forgot-password">
                     <label htmlFor="">Password</label>
-                    <h4>Forgot password?</h4>
                   </div>
                   <input
                     type="password"
@@ -88,7 +73,6 @@ const SignUp = ({ setOpenSignUpModal, onClickOpenLogIn }) => {
                   <p>
                     Already have an account?{" "}
                     <span
-                      onClick={onClickOpenLogIn}
                       style={{ cursor: "pointer" }}
                     >
                       Log In

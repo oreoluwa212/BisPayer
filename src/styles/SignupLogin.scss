@@ -9,7 +9,6 @@
    display: flex;
    flex-direction: row;
    justify-content: center;
-   padding-top: 0.3rem;
    overflow: hidden;
 
    .login-container {
@@ -21,9 +20,8 @@
 
       .login-section {
          background: #ECF9FF;
-         height: 700px;
-         width: 30%;
          border-radius: 10px;
+         padding: 20px 50px;
 
          @media (max-width: 1337px) {
             width: 40%;
@@ -32,13 +30,14 @@
 
          @media (max-width: 1060px) {
             width: 46%;
-
+            height: 85vh;
          }
 
          @media (max-width: 828px) {
             width: 60%;
 
          }
+
          @media (max-width: 670px) {
             width: 80%;
 
@@ -55,6 +54,7 @@
             justify-content: flex-end;
             color: red;
             font-family: Poppins;
+            cursor: pointer;
 
             @media (max-width: 1199px) {
                padding: 0px;
@@ -79,12 +79,10 @@
          .login-style {
             display: flex;
             align-items: center;
-            margin: 0.4rem 10%;
 
             .log-in {
                display: flex;
                flex-direction: column;
-               gap: 0px;
                font-family: Inter;
 
                h1 {
@@ -97,7 +95,6 @@
 
                p {
                   font-size: 1rem;
-                  padding-top: 0.5rem;
 
                   @media (max-width: 1199px) {
                      font-size: 15px;
@@ -110,7 +107,7 @@
 
                   button {
                      padding: 0px 20px;
-                     width: 300px;
+                     width: 100%;
                      color: #fff;
                      font-family: monospace;
                      font-size: 16px;
@@ -137,13 +134,11 @@
                      flex-basis: 20%;
                      text-align: center;
                      padding: 2px 0px;
-                     margin-top: 10px;
                      color: #060640;
                   }
                }
 
                .form-place {
-                  padding-top: 20px;
                   width: 100%;
 
                   .email {
@@ -168,7 +163,6 @@
                         height: 32px;
                         outline: 0;
                         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-                        padding: 10px;
 
                         @media (max-width: 1199px) {
                            padding: 12px;
@@ -192,10 +186,10 @@
                   .password {
                      display: flex;
                      flex-direction: column;
+                     padding-top: 12px;
 
 
                      .forgot-password {
-                        padding-top: 20px;
                         display: flex;
                         justify-content: space-between;
 
@@ -224,7 +218,6 @@
                      input {
                         background: hsl(0, 0%, 100%);
                         outline: 0;
-                        padding: 10px;
                         border: 0;
                         height: 32px;
                         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -297,6 +290,9 @@
                            font-size: 14px;
                            font-weight: 400;
                         }
+                                                @media (max-width: 1000px) {
+                                                   display: none;
+                                                }
 
                         span {
                            color: rgb(0, 89, 255);
